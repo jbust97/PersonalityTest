@@ -4,7 +4,9 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import NewTest from './Components/NewTest';
 import './App.css';
+
 function Home(){
   return (
     <div>
@@ -13,13 +15,6 @@ function Home(){
   )
 }
 
-function NewForm(){
-  return (
-    <div>
-      Nuevo Form
-    </div>
-  );
-}
 function App() {
   return (
     <div className="App">
@@ -38,7 +33,7 @@ function App() {
               <Home/>
             </Route>
             <Route path = "/nuevo">
-              <NewForm/>
+              <NewTest/>
             </Route>
           </Switch>
         </Router>
